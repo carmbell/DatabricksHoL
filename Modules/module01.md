@@ -7,4 +7,12 @@
 
 1. Navigate to your Azure Databricks account and click the **Launch Workshpace** tile.
 
-    ![Launch Workspace](../Images/module01/LaunchWorkspace.png)
+    ![Launch Workspace](../Images/Module01/LaunchWorkspace.png)
+
+2. A signin page will appear and load your credentials in from Azure
+   
+   ![Signin](../Images/Module01/signin.png)
+   
+3. A popup will prompt a selection of project type. In this lab, we will choose Exploring data (Python, R).
+
+    ![Initial Prompt](../Images/Module01/intialprompt.png)
