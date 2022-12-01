@@ -20,7 +20,7 @@ In order to follow along with the Azure Databricks lab exercises, you need to pr
 
 2. Beneath the **Resource group** field, click **Create new** and provide a unique name (e.g. `databricks-rg`), then provide a unique Workspace Name (e.g. `DatabricksHoL`), select a [valid location](https://azure.microsoft.com/global-infrastructure/services/?products=purview&regions=all) (e.g. `East US 2`), select the Trail Pricing Tier, and then click **Review + create**.
 
-    ![Deploy Template](../Images/module00/DbAzureDeploy.png)
+    ![Deploy Template](../Images/Module00/DbAzureDeploy.png)
 
 3. Once the validation has passed, click **Create**.
 
