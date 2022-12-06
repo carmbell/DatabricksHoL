@@ -37,4 +37,6 @@
 | Terminate after | 120 minutes |
 
 ![Develop cluster](../Images/Module01/developcluster.png)
+
+It will take a few minutes to create the cluster. Once it does, there will be a green check mark next to the name of the cluster.
     
