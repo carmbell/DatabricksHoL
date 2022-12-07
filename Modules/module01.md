@@ -27,14 +27,13 @@
 
     ![Create compute](../Images/Module01/createcompute.png)
     
-    A new screen will appear, where you will outline the policy. You will need to provide the inputs for creation:
+    A new screen will appear, where you will outline the policy. To update the name of your cluster, you will need to select the pencil icon next to the cluster name. You will need to updates the inputs for creation:
+
 
 | Parameter | Value |
 | --- | --- |
-| Policy | Personal Compute |
-| Databricks runtime version | Runtime: 11.3 LTS ML (Scala 2.12, Spark 3.3.0) |
-| Node Type | Standard_DS3_v2 |
-| Terminate after | 120 minutes |
+| Cluster Name | Databricks Lab Cluster |
+| Max workers | 4 |
 
 ![Develop cluster](../Images/Module01/developcluster.png)
 
