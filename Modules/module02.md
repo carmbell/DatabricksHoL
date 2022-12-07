@@ -39,3 +39,11 @@
 4. Under the Members tab, click **+ Select Members** and add your username. Then click **Review + Assign**
 
   ![Assign Contributor Role](../Images/Module02/assignrole.png)
+  
+## 3. Download AzCopy
+1. Go to the [AzCopy Doc page](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json) and download the appropriate version for your computer.
+    > Note: If you already have AzCopy downloaded, make sure it is version 10.
+
+## 4. Create a service principal
+1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your Azure Active Directory account.
+2. 
