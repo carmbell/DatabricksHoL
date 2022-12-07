@@ -35,7 +35,12 @@
 | Cluster Name | Databricks Lab Cluster |
 | Max workers | 4 |
 
-![Develop cluster](../Images/Module01/developcluster.png)
+![Develop cluster](../Images/Module01/createunrestrictedpolicy.png)
 
 It will take a few minutes to create the cluster. Once it does, there will be a green check mark next to the name of the cluster.
+
+![Green cluster](../Images/Module01/greencluster.png)
+
+
+[Continue >](../modules/module02.md)
     
