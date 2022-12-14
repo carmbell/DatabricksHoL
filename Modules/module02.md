@@ -1,6 +1,6 @@
 # Module 02 - Set up Azure Data Lake Storage Gen 2
 
-[< Previous Module](../modules/module01.md) - **[Home](../README.md)** - [Next Module >](../modules/module03.md)
+[< Previous Module](../Modules/module01.md) - **[Home](../README.md)** - [Next Module >](../Modules/module03.md)
 
 
 ## 1. Create a Azure Data Lake Storage account
@@ -44,6 +44,16 @@
 1. Go to the [AzCopy Doc page](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json) and download the appropriate version for your computer.
     > Note: If you already have AzCopy downloaded, make sure it is version 10.
 
-## 4. Create a service principal
+## 4. Create a client secret
 1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your Azure Active Directory account.
-2. 
+
+2. Under manage, select App Registration. Then Click **+ New Registration **
+  ![New App Registration](../Images/Module02/appregister.png)
+
+3. When registering an application, create a unique name for the App registration. Select **Accounts in this organizational directory only (Default Directory only - Single tenant)** as the **Supported Account Types**.  Then select **Register**.
+  ![Register App Info](../Images/Module02/RegisterAppInfo.png)
+
+4. Once the app registration is complete, in **Manage** click **Certificates & secrets**.  
+
+5. On the **Client secrets** tab, click **New client secret**.
+  ![New client secret](../Images/Module02/newclientsecret.png)
