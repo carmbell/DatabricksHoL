@@ -57,3 +57,28 @@
 
 5. On the **Client secrets** tab, click **New client secret**.
   ![New client secret](../Images/Module02/newclientsecret.png)
+  
+6.In the **Add a client secret pane**, for **Description**, enter a description for the client secret. For **expires**, keep it at the recommended 6 months. Then click **Add**.
+  ![Add client description](../Images/Module02/secretdesc.png)
+  
+7. A Client secret will be created, copy the **Value** of the secret.
+  ![Copy value](../Images/Module02/copyvalue.png)
+
+8. Return to the **Overview** page, in the Essentials section, copy the **Application (client) ID** and **Directory (tenant) ID**.
+  ![Essentials](../Images/Module02/essentials.png)
+  
+## 5. Add client secret to Key Vault
+1. In the Azure portal, go to the [Storage accounts] (https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts) service.
+
+2. Select an Azure storage account that was created in **Step 1**.
+
+3. Click Access Control (IAM).
+
+4. Click + Add and select Add role assignment from the dropdown menu.
+  ![Add Role](../Images/Module02/addroleadls.png)
+
+6. Set the Role to Storage Blob Data Contributor, then add to the Member field the name of the Service Prinicipal in Step 4, substep 3.
+
+7. Click **Review + assign**.
+    ![Storage Blob Data Contributor](../Images/Module02/datacontributor.png)
+ 
