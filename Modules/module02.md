@@ -1,4 +1,4 @@
-# Module 02 - Set up Azure Data Lake Storage Gen 2
+# Module 02 - Set up Azure Data Lake Storage Gen 2 and Azure Key Vault
 
 [< Previous Module](../Modules/module01.md) - **[Home](../README.md)** - [Next Module >](../Modules/module03.md)
 
@@ -64,7 +64,7 @@
 
   ![Add client description](../Images/Module02/secretdesc.png)
   
-7. A Client secret will be created, copy the **Value** of the secret.
+7. A Client secret will be created, copy the **Value** of the secret. Be sure to save it somewhere you can easily get to, you won't be able to access it again.
 
   ![Copy value](../Images/Module02/copyvalue.png)
 
@@ -89,3 +89,19 @@
     
     ![Storage Blob Data Contributor](../Images/Module02/datacontributor.png)
  
+8. Search for the Azure Key Vault that was automatically created in Module 00.
+
+9. On the key vault settings pages, select Secrets. Click on + Generate/Import.
+
+    ![Import Key](../Images/Module02/importkey.png)
+    
+10. In Upload options, select Manual. For Name, enter in the name: **DBtoADLSSecret**. The secret name must be unique within a key vault.  For Value, paste the Client Secret that you stored in Step 4, substep 7. Click Create.
+
+    ![Add new Key](../Images/Module02/addtokeyvault.png)
+
+## 6. Create Azure Key Vault-backed secret scope
+1. Go to https://<databricks-instance>#secrets/createScope. This URL is case sensitive; scope in createScope must be uppercase.
+  
+2. Enter in a scope name. Leave Manage Prinicpal as Creator. The DNS Name is found in the **Overview** tab in the Key Vault page in Azure as Vault URI. The Resource ID is found in the Key Vault's Properties tab.
+
+    ![Databricks Key Vault](../Images/Module02/dbkeyvault.png)
