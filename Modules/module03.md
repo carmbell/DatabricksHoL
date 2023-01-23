@@ -3,7 +3,7 @@
 [< Previous Module](../Modules/module02.md) - **[Home](../README.md)** - [Next Module >](../Modules/module04.md)
 
 
-## 1. Open Databricks
+## 1. Connect Azure Data Lake to Databricks
 
 1. Navigate to your Azure Databricks account and click the **Launch Workshpace** tile.
 2. On the left hand navigation, click the + sign. Select **Notebook**.
@@ -38,4 +38,44 @@ spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account>.dfs.co
 
     ![Connect to ADLS](../Images/Module03/connecttoadls.png)
 
-6.
+6. Click the + sign below the cell to create a new blank cell.
+7. In our first cell, we established we can connect to our Data Lake. Now we are going to mount our Data Lake to our Databricks notebook. Copy the code below into the new cell.
+
+```
+configs = {"fs.azure.account.auth.type": "OAuth",
+          "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
+          "fs.azure.account.oauth2.client.id": "<application-id>",
+          "fs.azure.account.oauth2.client.secret": dbutils.secrets.get(scope="<scope-name>",key="<service-credential-key-name>"),
+          "fs.azure.account.oauth2.client.endpoint": "https://login.microsoftonline.com/<directory-id>/oauth2/token"}
+
+# Optionally, you can add <directory-name> to the source URI of your mount point.
+dbutils.fs.mount(
+  source = "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/",
+  mount_point = "/mnt/<mount-name>",
+  extra_configs = configs)
+  ```
+
+  Replace
+
+* **application-id** with the Application (client) ID for the Azure Active Directory application.
+* **scope-name** with the Databricks secret scope name.
+* **service-credential-key-name** with the name of the key containing the client secret.
+* **directory-id** with the Directory (tenant) ID for the Azure Active Directory application.
+* **container-name** with the name of a container in the ADLS Gen2 storage account.
+* **storage-account-name** with the ADLS Gen2 storage account name.
+* **mount-name** with the name of the intended mount point in DBFS. **Note** I will be naming my mount **hol**.
+
+Then run the cell by pressing the play button. The output should come back as true.
+
+## 2. Display Data
+1. First we want to see what data is in our container. Select the + sign to create a new cell. Copy the code below into the cell. **Note**, I named my mounted storage hol in the previous step.
+
+```
+display(dbutils.fs.ls("/mnt/hol"))
+```
+Then run this code for the following results:
+    ![Display Container Files](../Images/Module03/displayfiles.png)
+
+We see that there are two parquet files in our container.
+
+2. 
