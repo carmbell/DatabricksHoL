@@ -78,4 +78,12 @@ Then run this code for the following results:
 
 We see that there are two parquet files in our container.
 
-2. 
+2. Click the + sign under the cell to create a new cell. Lets investigate the first parquet file. Copy the code below then run the cell.
+
+```
+df = spark.read.format("parquet").options(header='true', inferschema='true').load("dbfs:/mnt/hol/yellow_tripdata_2022-09.parquet")
+display(df)
+```
+![View Data](../Images/Module03/viewtable.png)
+
+The result should show you the first 1000 rows of data from the parquet file.
