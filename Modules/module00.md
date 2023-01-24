@@ -14,7 +14,7 @@ In order to follow along with the Azure Databricks lab exercises, you need to pr
     
 ## :test_tube: Lab Environment Setup
 
-1. Open Azure Portal and in the search bar look up Databricks. Select Azure Databricks
+1. Open [Azure Portal](https://portal.azure.com) and in the search bar look up Databricks. Select Azure Databricks
     ![Search for Databricks](../Images/Module00/searchdb.png)
 
 2. Select Create
