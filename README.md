@@ -19,17 +19,11 @@ Unlike many enterprise database companies, Azure Databricks does not force you t
 
 * [Lab Environment](./Modules/module00.md)
 
-## :books: Preface
-
-
-
 ## :books: Learning Modules
 * [Module 1: Create a Cluster](./Modules/module01.md)
 * [Module 2: Set up Azure Data Lake Storage Gen 2 and Azure Key Vault](./Modules/module02.md)
 * [Module 3: Import and Visualize Data](./Modules/module03.md)
 * [Module 4: Workflows](./Modules/module04.md)
-
-## :books: Optional Learning Modules
 
 
 <div align="right"><a href="#microsoft-purview-workshop">↥ back to top</a></div>
