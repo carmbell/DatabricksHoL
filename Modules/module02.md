@@ -105,3 +105,6 @@
 2. Enter in a scope name. Leave Manage Prinicpal as Creator. The DNS Name is found in the **Overview** tab in the Key Vault page in Azure as Vault URI. The Resource ID is found in the Key Vault's Properties tab.
 
     ![Databricks Key Vault](../Images/Module02/dbkeyvault.png)
+
+
+[Continue >](../modules/module03.md)

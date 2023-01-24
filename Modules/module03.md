@@ -1,4 +1,4 @@
-# Module 03 - Import Data
+# Module 03 - Import and Visualize Data
 
 [< Previous Module](../Modules/module02.md) - **[Home](../README.md)** - [Next Module >](../Modules/module04.md)
 
@@ -156,3 +156,4 @@ The cells now have a default language of R.  You can continue to code in Python 
 2. The cell will indicate what language you are coding in, in the top right hand corner.
     ![Multiple Language Types](../Images/Module03/multilanguage.png)
 
+[Continue >](../modules/module04.md)
