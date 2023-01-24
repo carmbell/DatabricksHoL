@@ -108,6 +108,10 @@ Then Click Save.
 
 ![Bar Chart](../Images/Module03/createbarchart.png)
 
+3. The visualization will appear in the same area as the table display of the data. You can download the aggredated data into CSV, Excel, or TSV.
+
+![Download Visual](../Images/Module03/downloadvisual.png)
+
 ## 4. SQL Statements in Databricks
 1. You can embed SQL code within Python to query the data. We are going to create a temporary SQL view of our Taxi Cab data. We want to see all the rides done by Vendor 1. Copy the code below into a new cell, then run the cell.
 
