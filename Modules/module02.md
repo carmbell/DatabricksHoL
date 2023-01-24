@@ -12,18 +12,18 @@
 
 3. Provide the necessary inputs on the **Basics** tab and click **Next: Advanced >**.  
 
-| Parameter | Value |
-| --- | --- |
-| Resource Group | databricks-rg |
-| Storage account name | dbholadls |
-| Performance | Premium |
-| Premium account type | Block blobs |
+    | Parameter | Value |
+    | --- | --- |
+    | Resource Group | databricks-rg  (the one we recreated in Module00)|
+    | Storage account name | dbholadls |
+    | Performance | Premium |
+    | Premium account type | Block blobs |
 
-  ![Basic Azure Data Lake Inputs](../Images/Module02/createadls.png)
+    ![Basic Azure Data Lake Inputs](../Images/Module02/createadls.png)
   
 4. On the **Advance** tab, under Data Lake Storage Gen 2 select **Enable hierarchial namespace**, and click **Review**.
 
-  ![Advance Azure Data Lake Inputs](../Images/Module02/enablehierarchy.png)
+    ![Advance Azure Data Lake Inputs](../Images/Module02/enablehierarchy.png)
   
 5. Once Validation is complete, click **Create**.
 
@@ -44,11 +44,12 @@
 
   ![Access Control Assignment](../Images/Module02/addrole.png)
   
-3.In the search bar, look for **Storage Blob Data Contributor** role, then click Next.
+
+3. In the search bar, look for **Storage Blob Data Contributor** role, then click Next.
 
 4. Under the Members tab, click **+ Select Members** and add your username. Then click **Review + Assign**
 
-  ![Assign Contributor Role](../Images/Module02/assignrole.png)
+    ![Assign Contributor Role](../Images/Module02/assignrole.png)
   
 ## 4. Create a client secret
 1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your Azure Active Directory account.
@@ -58,25 +59,25 @@
 
 3. When registering an application, create a unique name for the App registration. Select **Accounts in this organizational directory only (Default Directory only - Single tenant)** as the **Supported Account Types**.  Then select **Register**.
 
-  ![Register App Info](../Images/Module02/RegisterAppInfo.png)
+    ![Register App Info](../Images/Module02/RegisterAppInfo.png)
 
 4. Once the app registration is complete, in **Manage** click **Certificates & secrets**.  
 
 5. On the **Client secrets** tab, click **New client secret**.
  
-  ![New client secret](../Images/Module02/newclientsecret.png)
+    ![New client secret](../Images/Module02/newclientsecret.png)
   
-6.In the **Add a client secret pane**, for **Description**, enter a description for the client secret. For **expires**, keep it at the recommended 6 months. Then click **Add**.
+6. In the **Add a client secret pane**, for **Description**, enter a description for the client secret. For **expires**, keep it at the recommended 6 months. Then click **Add**.
 
-  ![Add client description](../Images/Module02/secretdesc.png)
+    ![Add client description](../Images/Module02/secretdesc.png)
   
 7. A Client secret will be created, copy the **Value** of the secret. Be sure to save it somewhere you can easily get to, you won't be able to access it again.
 
-  ![Copy value](../Images/Module02/copyvalue.png)
+    ![Copy value](../Images/Module02/copyvalue.png)
 
 8. Return to the **Overview** page, in the Essentials section, copy the **Application (client) ID** and **Directory (tenant) ID**.
   
-  [Essentials](../Images/Module02/essentials.png)
+    ![Essentials](../Images/Module02/essentials.png)
   
 ## 4. Add client secret to Key Vault
 1. In the Azure portal, go to the [Storage accounts](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts) service.
@@ -87,7 +88,7 @@
 
 4. Click + Add and select Add role assignment from the dropdown menu.
   
-  ![Add Role](../Images/Module02/addroleadls.png)
+    ![Add Role](../Images/Module02/addroleadls.png)
 
 6. Set the Role to Storage Blob Data Contributor, then add to the Member field the name of the Service Prinicipal in Step 4, substep 3.
 
@@ -113,4 +114,4 @@
     ![Databricks Key Vault](../Images/Module02/dbkeyvault.png)
 
 
-[Continue >](../modules/module03.md)
+[Continue >](../Modules/module03.md)

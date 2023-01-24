@@ -92,7 +92,7 @@ The result should show you the first 1000 rows of data from the parquet file.
 ## 3. Visualize Data
 1. Click the + sign next to the table icon from the previous query. Select Visualization.
 
-![New Visual](../Images/Module03/newvisual.png)
+    ![New Visual](../Images/Module03/newvisual.png)
 
 2. A visualization editor page will appear. We will be creating a bar chart to show average trip distance by Vendor ID. Select the following options:
 
@@ -182,4 +182,4 @@ The cells now have a default language of R.  You can continue to code in Python 
 2. The cell will indicate what language you are coding in, in the top right hand corner.
     ![Multiple Language Types](../Images/Module03/multilanguage.png)
 
-[Continue >](../modules/module04.md)
+[Continue >](../Modules/module04.md)
