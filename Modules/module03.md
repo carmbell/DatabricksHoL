@@ -125,3 +125,34 @@ display(d1)
 ```
 
 ![SQL Query](../Images/Module03/sqlquery.png)
+
+## 5. Change Data Language
+### Change Language for Entire Notebook
+1. Go to the top right corner of the notebook by the Notebook name and select the python dropdown. Select R.
+
+
+    ![Change Python to R](../Images/Module03/changeRnotebook.png)
+
+2. A popup will appear indicating you are changing the default language. ```%python``` will appear at the top of your cells written in python. Select confirm.
+
+    ![Confirm Change](../Images/Module03/confirmchange.png)
+
+3. If you look at the first cell in our notebook, ```%python``` is now at the top of each cell.
+
+    ![New Cell Addition](../Images/Module03/pythoncodeadd.png)
+
+The cells now have a default language of R.  You can continue to code in Python by adding the ```%python``` to the top of your cell.
+
+### Change Language for a Cell
+1. At the top of the cell, you can specify the language you'd like to use. 
+
+    ```
+    %python
+    %scala
+    %r
+    %sql
+    ```
+
+2. The cell will indicate what language you are coding in, in the top right hand corner.
+    ![Multiple Language Types](../Images/Module03/multilanguage.png)
+
