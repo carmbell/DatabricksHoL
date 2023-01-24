@@ -27,11 +27,22 @@
     * Type: Notebook
     * Source: Workspace
     * Path: When you select the path location, go to where you just imported that .dbc file.
-    * Cluster: Shared_job_cluster
+    * Cluster: Databricks Lab Cluster (the cluster we created in Module 01)
 
 Then select Create.
 
 ![Task Details](../Images/Module04/tasksetup.png)
 
 4. In the top right corner, Select Run Now.
-5. 
+5. Toggle to the Run view of the job. It should only take about 10 seconds for a Successful Run to appear.
+
+    ![Successful Run](../Images/Module04/successfulrun.png)
+
+6. Select the successful runs log time to view the output. It will show you the code run in the cells and the output of the queries.
+
+    ![Output of Successful Run](../Images/Module04/outputtask.png)
+
+**Note** If you ran this code in the notebook, you will have the same output.
+
+## 3. Run with Different Parameters
+1. 
