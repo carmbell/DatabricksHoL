@@ -27,6 +27,16 @@
   
 5. Once Validation is complete, click **Create**.
 
+6. Go to the resource once it has been provisioned. On the navigation, select Containers.
+
+7. Select the + Container option to create a new container.
+
+8. Name it taxicab and make the Public Access Level be Container then create.
+
+    ![New Container Name](../Images/Module02/newcontainername.png) 
+
+9. Download the parquet files from the [Data Folder](../Data). Then upload them to the taxicab container.
+
 ## 2. Assign Storage Blob Data Contributor Role
 1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your databricks resource group (e.g. databricks-rg).
 
@@ -40,10 +50,6 @@
 
   ![Assign Contributor Role](../Images/Module02/assignrole.png)
   
-## 3. Download AzCopy
-1. Go to the [AzCopy Doc page](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json) and download the appropriate version for your computer.
-    > Note: If you already have AzCopy downloaded, make sure it is version 10.
-
 ## 4. Create a client secret
 1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your Azure Active Directory account.
 
@@ -72,7 +78,7 @@
   
   [Essentials](../Images/Module02/essentials.png)
   
-## 5. Add client secret to Key Vault
+## 4. Add client secret to Key Vault
 1. In the Azure portal, go to the [Storage accounts](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts) service.
 
 2. Select an Azure storage account that was created in **Step 1**.
@@ -99,7 +105,7 @@
 
     ![Add new Key](../Images/Module02/addtokeyvault.png)
 
-## 6. Create Azure Key Vault-backed secret scope
+## 5. Create Azure Key Vault-backed secret scope
 1. Go to https://<databricks-instance>#secrets/createScope. This URL is case sensitive; scope in createScope must be uppercase.
   
 2. Enter in a scope name. Leave Manage Prinicpal as Creator. The DNS Name is found in the **Overview** tab in the Key Vault page in Azure as Vault URI. The Resource ID is found in the Key Vault's Properties tab.

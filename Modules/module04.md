@@ -45,4 +45,18 @@ Then select Create.
 **Note** If you ran this code in the notebook, you will have the same output.
 
 ## 3. Run with Different Parameters
-1. 
+1. Open the Baby_Name_Run Job and select the dropdown next to Run now. Select Run now with different parameters.
+
+    ![Run Different Parameters](../Images/Module04/diffparameters.png)
+
+2. Under UI, we will add the year 2015 to filter our names on.
+    * Key: year
+    * Value: 2015
+
+    Then select Run
+
+    ![Run New Task Parameters](../Images/Module04/runnewparam.png)
+
+3. After a successful run, open the logs again to see the output. Even though the cell says it is filtering on 2014, the results show 2015 due to the different parameters being passed.
+
+    ![Run New Task Parameters 2015](../Images/Module04/2015output.png)
