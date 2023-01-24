@@ -87,3 +87,37 @@ display(df)
 ![View Data](../Images/Module03/viewtable.png)
 
 The result should show you the first 1000 rows of data from the parquet file.
+
+
+## 3. Visualize Data
+1. Click the + sign next to the table icon from the previous query. Select Visualization.
+
+![New Visual](../Images/Module03/newvisual.png)
+
+2. A visualization editor page will appear. We will be creating a bar chart to show average trip distance by Vendor ID. Select the following options:
+
+    * Visualization Type: Bar
+    * X Column: Vendor ID
+    * Click Add Columns for Y Column
+    * Y Column: Trip_Distance
+    * Y column aggregation: Average
+    * Group by: Vendor ID
+    * Missing and NULL Values: Do not display in chart
+
+Then Click Save.
+
+![Bar Chart](../Images/Module03/createbarchart.png)
+
+## 4. SQL Statements in Databricks
+1. You can embed SQL code within Python to query the data. We are going to create a temporary SQL view of our Taxi Cab data. We want to see all the rides done by Vendor 1. Copy the code below into a new cell, then run the cell.
+
+```
+# Create a temporary sql view for querying data
+df.createOrReplaceTempView('df')
+
+#using SQL to query data to show only rides from Vendor ID = 1
+vendor1 = spark.sql("SELECT * FROM df WHERE VendorID = 1")
+display(d1)
+```
+
+![SQL Query](../Images/Module03/sqlquery.png)
