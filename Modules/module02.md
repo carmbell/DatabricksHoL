@@ -107,7 +107,7 @@
     ![Add new Key](../Images/Module02/addtokeyvault.png)
 
 ## 5. Create Azure Key Vault-backed secret scope
-1. Go to https://<databricks-instance>#secrets/createScope. This URL is case sensitive; scope in createScope must be uppercase.
+1. Go to ```https://<databricks-instance>#secrets/createScope```. This URL is case sensitive; scope in createScope must be uppercase.
   
 2. Enter in a scope name. Leave Manage Prinicpal as Creator. The DNS Name is found in the **Overview** tab in the Key Vault page in Azure as Vault URI. The Resource ID is found in the Key Vault's Properties tab.
 
