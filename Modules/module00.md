@@ -14,6 +14,7 @@ In order to follow along with the Azure Databricks lab exercises, you need to pr
     
 ## :test_tube: Lab Environment Setup
 
+### Create Databricks
 1. Open [Azure Portal](https://portal.azure.com) and in the search bar look up Databricks. Select Azure Databricks
     ![Search for Databricks](../Images/Module00/searchdb.png)
 
@@ -21,9 +22,21 @@ In order to follow along with the Azure Databricks lab exercises, you need to pr
 3. Under resource group select, **Create new**. Create a unique workspace name for your databricks instance. Pick a regions closest to you. Select **Trial** Pricing Tier. Then select **Review + Create**.
     ![Search for Databricks](../Images/Module00/newdbinstance.png)
 
+### Create Azure Key Vault
+1. Open [Azure Portal](https://portal.azure.com) and in the search bar look up Key Vault. Select Key Vault.
+
+    ![Search for Key Vault](../Images/Module00/searchkeyvault.png)
+
+2. Select Create
+
+3. Select the resource group that was created when we provision Databricks. Create a unique key vault name. Select the same region as Databricks. Keep Pricing Tier as Standard.  Then select **Review + Create**
+
+    ![Create Key Vault](../Images/Module00/createkeyvault.png)
+
+
 ## :tada: Summary
 
-By successfully deploying the Azure Databricks, you are ready to follow along with the learning exercises.
+By successfully deploying the Azure Databricks and Azure Key Vault, you are ready to follow along with the learning exercises.
 
 A resource group will be deployed for you to add upcoming resources to. There will be another resource group created that is specific for the databricks resources.
 

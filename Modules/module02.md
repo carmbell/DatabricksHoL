@@ -96,7 +96,7 @@
     
     ![Storage Blob Data Contributor](../Images/Module02/datacontributor.png)
  
-8. Search for the Azure Key Vault that was automatically created in Module 00.
+8. Search for the Azure Key Vault that was created in Module 00.
 
 9. On the key vault settings pages, select Secrets. Click on + Generate/Import.
 
