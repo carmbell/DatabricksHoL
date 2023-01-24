@@ -112,7 +112,33 @@ Then Click Save.
 
 ![Download Visual](../Images/Module03/downloadvisual.png)
 
-## 4. SQL Statements in Databricks
+
+## 4. Data Profile of Data
+1. Click the + sign next to the table icon from the previous query. Select Data Profile.
+
+    ![Data Profile](../Images/Module03/dataprofile.png)
+2. It will automatically generate a statistical analysis of each column in the dataset.
+    ![Data Profile Output](../Images/Module03/dataprofileoutline.png)
+
+### 5. Databricks Dashboard
+1. Visualizations can be pinned to a dashboard. Select the dropdown next to Visualization and select Add to Dashboard. Select Add to a New Dashboard.
+    
+    ![Save to Dashboard](../Images/Module03/savetodashboard.png)
+
+2. You will enter the dashboard view of your data. You can add other visualizations to this dashboard. Click the pen icon and update the name from Untitled to Ingest Dashboard.
+
+    ![Add to Dashboard](../Images/Module03/viewdashboard.png)
+
+3. Return your notebook view. Go to the Data Profile view of your data. 
+4. Select the drop down in Data Profile 1 and select Add to Dashboard. Then select our new dashboard Ingest Data to add our visualization to. 
+
+    ![Save New Visual to Dashboard](../Images/Module03/addnewvisualtodash.png)
+
+5. Select the blue button in a box to pull the Dashboard back up and to see your new visualization added to your dashboard.
+
+   ![Add New Visual to Dashboard](../Images/Module03/visual2indash.png)
+
+## 6. SQL Statements in Databricks
 1. You can embed SQL code within Python to query the data. We are going to create a temporary SQL view of our Taxi Cab data. We want to see all the rides done by Vendor 1. Copy the code below into a new cell, then run the cell.
 
 ```
@@ -126,7 +152,7 @@ display(d1)
 
 ![SQL Query](../Images/Module03/sqlquery.png)
 
-## 5. Change Data Language
+## 7. Change Data Language
 ### Change Language for Entire Notebook
 1. Go to the top right corner of the notebook by the Notebook name and select the python dropdown. Select R.
 

@@ -4,8 +4,9 @@
 
 
 ## 1. Create a Job
-1. Go to the left hand navigation and select Workflow.
+1. Upload notebook from the Module 03 folder. 
+2. Go to the left hand navigation and select Workflow.
 
     ![Open Workflows](../Images/Module04/workflow.png)
-2. Select Create Job.
-3. 
+3. Select Create Job.
+4. 
