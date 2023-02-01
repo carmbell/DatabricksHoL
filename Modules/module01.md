@@ -42,5 +42,5 @@ It will take a few minutes to create the cluster. Once it does, there will be a 
 ![Green cluster](../Images/Module01/greencluster.png)
 
 
-[Continue >](../modules/module02.md)
+[Continue >](../Modules/module02.md)
     
