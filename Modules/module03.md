@@ -147,7 +147,7 @@ df.createOrReplaceTempView('df')
 
 #using SQL to query data to show only rides from Vendor ID = 1
 vendor1 = spark.sql("SELECT * FROM df WHERE VendorID = 1")
-display(d1)
+display(vendor1)
 ```
 
 ![SQL Query](../Images/Module03/sqlquery.png)
